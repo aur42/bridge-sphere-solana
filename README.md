@@ -8,7 +8,7 @@
 # solana_transaction.rb - Solana Transaction Parsing
 
 * Takes in a Solana tx hash and (optional) mint currency, and returns a list of token transfers in that tx.
-* Filters token transfers based upon the mint currency provided, otherwise will return all token transfers in the tx.
+* Filters token transfers based on the mint currency provided, otherwise will return all token transfers in the tx.
 * Returns an empty array on Solana transactions that do not contain a token transfer (e.g., votes, oracle, etc.).
 * Returns a list of token transfers, including the from address, and whether the transfer involves ATA/system.
 * Uses Helius API (highly Solana optimized RPC, best response times and most granular data).
