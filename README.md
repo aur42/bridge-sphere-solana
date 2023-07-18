@@ -1,5 +1,7 @@
 # bridge-sphere-solana
 
+ruby (3.2.2), rbnacl (6.0.1), libsodium (1.0.18)
+
 # solana_address.rb - Solana Address Validation
 
 * Takes in a `string` as a parameter and wraps it into a custom class.
