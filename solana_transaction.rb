@@ -48,10 +48,9 @@ class SolanaTransaction
 end
 
 
-# If you want to test this file from the command line, uncomment the following lines:
-# if __FILE__ == $0
-#     transaction = SolanaTransaction.new(ARGV[0], ARGV[1])
-#     result = transaction.get_token_transfers
-#     puts JSON.pretty_generate(result)
-# end
+if __FILE__ == $0
+    transaction = SolanaTransaction.new(ARGV[0], ARGV[1])
+    result = transaction.get_token_transfers
+    puts JSON.pretty_generate(result)
+end
 

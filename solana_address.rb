@@ -28,3 +28,18 @@ class SolanaAddress
   end
 end
 
+
+# CLI interaction logic
+if __FILE__ == $0
+  if ARGV.empty?
+    puts "Please provide a Solana address to check."
+    exit
+  end
+
+  address = SolanaAddress.new(ARGV[0])
+  if address.valid?
+    puts "The address #{ARGV[0]} is a valid Solana address."
+  else
+    puts "The address #{ARGV[0]} is not a valid Solana address."
+  end
+end
